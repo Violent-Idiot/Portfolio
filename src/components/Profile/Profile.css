@@ -1,0 +1,52 @@
+.picture {
+  width: 350px;
+  height: 350px;
+  background: black;
+  border: 5px solid gray;
+  border-radius: 50%;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.about {
+  width: 40%;
+  margin-top: 40px;
+}
+.burger {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.fa-chevron-down {
+  font-size: 30px;
+  margin-top: -10px;
+  color: white;
+  animation: fade 1000ms alternate infinite ease;
+}
+.fa-chevron-down:nth-child(1) {
+  animation-delay: 1000ms;
+}
+.fa-chevron-down:nth-child(2) {
+  animation-delay: 1500ms;
+}
+.fa-chevron-down:nth-child(3) {
+  animation-delay: 2000ms;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

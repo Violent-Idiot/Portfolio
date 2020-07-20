@@ -1,0 +1,22 @@
+.yoman {
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #1e272e;
+  font-size: 30px;
+  /* height: 50px; */
+  width: 175.05px;
+  border-radius: 10px;
+  display: flex;
+  transition: all 100ms ease;
+  cursor: pointer;
+}
+.logo-name {
+  padding: 30px;
+  color: white;
+}
+.yoman:hover {
+  background: #808e9b;
+}
+.yoman:hover .logo-name {
+  color: black;
+}
