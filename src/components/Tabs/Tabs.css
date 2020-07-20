@@ -1,0 +1,18 @@
+.tab-section {
+  height: 40px;
+  margin-top: 50px;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 5px;
+  background: #2980b9;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.tab {
+  transition: all 100ms ease;
+}
+.tab:hover {
+  color: white;
+  border-bottom: 3px solid black;
+}

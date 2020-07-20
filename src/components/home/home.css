@@ -1,6 +1,6 @@
 .yoman {
-  margin-top: 20px;
-  margin-left: 20px;
+  /* margin-top: 20px;
+  margin-left: 20px; */
   background: #1e272e;
   font-size: 30px;
   /* height: 50px; */
@@ -9,6 +9,10 @@
   display: flex;
   transition: all 100ms ease;
   cursor: pointer;
+  z-index: 3;
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
 .logo-name {
   padding: 30px;
