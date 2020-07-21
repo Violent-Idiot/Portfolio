@@ -1,0 +1,32 @@
+.card1 {
+  margin-left: 10%;
+  width: 80%;
+}
+.card {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.flexing {
+  background: black;
+  height: 400px;
+  width: 600px;
+}
+.discription {
+  margin-top: 30px;
+  width: 50%;
+}
+.title {
+  text-align: end;
+  color: white;
+  font-size: 40px;
+}
+.content {
+  font-size: 25px;
+  margin-top: 40px;
+  color: white;
+}

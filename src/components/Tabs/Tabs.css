@@ -9,8 +9,12 @@
   justify-content: space-around;
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 .tab {
-  transition: all 100ms ease;
+  color: black;
+  transition: all 200ms ease;
 }
 .tab:hover {
   color: white;
