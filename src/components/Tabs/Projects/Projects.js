@@ -1,10 +1,13 @@
 import React from "react";
+// import name from "./test_img.png";
 import "./Projects.css";
 const Projects = () => {
   return (
     <div className='card1'>
       <div className='card'>
-        <div className='flexing'></div>
+        <div className='flexing'>
+          {/* <img src={"./test_img.png"} alt='test_img' /> */}
+        </div>
         <div className='discription'>
           <div className='title'>THE TITLE</div>
           <div className='content'>

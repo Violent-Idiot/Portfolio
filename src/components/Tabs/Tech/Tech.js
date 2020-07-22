@@ -3,7 +3,44 @@ import "./Tech.css";
 const Projects = () => {
   return (
     <div className='card1'>
-      <p className='yo'>YELO</p>
+      <div className='card'>
+        <div className='flexing'>
+          {/* <img src={"./test_img.png"} alt='test_img' /> */}
+        </div>
+        <div className='discription'>
+          <div className='title'>YOLO</div>
+          <div className='content'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            laboriosam eos soluta aspernatur, corrupti voluptatum modi suscipit
+            architecto mollitia, dolor dolore pariatur tempora neque, veritatis
+            itaque illum quod repellendus quasi.
+          </div>
+        </div>
+      </div>
+      <div className='card'>
+        <div className='flexing'></div>
+        <div className='discription'>
+          <div className='title'>THE TITLE2</div>
+          <div className='content'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            laboriosam eos soluta aspernatur, corrupti voluptatum modi suscipit
+            architecto mollitia, dolor dolore pariatur tempora neque, veritatis
+            itaque illum quod repellendus quasi.
+          </div>
+        </div>
+      </div>
+      <div className='card'>
+        <div className='flexing'></div>
+        <div className='discription'>
+          <div className='title'>THE TITLE2</div>
+          <div className='content'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            laboriosam eos soluta aspernatur, corrupti voluptatum modi suscipit
+            architecto mollitia, dolor dolore pariatur tempora neque, veritatis
+            itaque illum quod repellendus quasi.
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
