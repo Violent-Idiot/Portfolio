@@ -1,9 +1,22 @@
 form {
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
 }
 input[type="text"] {
+  width: 80%;
+  margin-top: 30px;
+  border-bottom: 2px solid white !important;
   outline: none;
   background: transparent;
   border: none;
+}
+input[type="submit"] {
+  color: white;
+  margin-top: 30px;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  width: 30%;
+  padding: 10px;
 }
