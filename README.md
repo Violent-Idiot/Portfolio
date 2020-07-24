@@ -7,6 +7,8 @@ There are two directory as you can see:-
 
 ### `npm run dev`
 
+Go to API dir and run the above code.<br />
+
 Use Concurrently for running React in Front-end and Node in Back-end.
 Runs the app in the development mode.<br />
 
