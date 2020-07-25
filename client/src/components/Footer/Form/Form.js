@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./Form.css";
 const Form = () => {
@@ -16,6 +16,8 @@ const Form = () => {
         msg,
       })
       .then((res) => console.log(res.data));
+    setemail("");
+    setmsg("");
   };
   return (
     <form onSubmit={handleSubmit}>

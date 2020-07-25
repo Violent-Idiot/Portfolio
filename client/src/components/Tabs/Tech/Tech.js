@@ -2,45 +2,37 @@ import React from "react";
 import "./Tech.css";
 const Projects = () => {
   return (
-    <div className='card1'>
-      <div className='card'>
-        <div className='flexing'>
-          {/* <img src={"./test_img.png"} alt='test_img' /> */}
-        </div>
-        <div className='discription'>
-          <div className='title'>YOLO</div>
-          <div className='content'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            laboriosam eos soluta aspernatur, corrupti voluptatum modi suscipit
-            architecto mollitia, dolor dolore pariatur tempora neque, veritatis
-            itaque illum quod repellendus quasi.
-          </div>
-        </div>
+    <div className='card2'>
+      <div className='item'>
+        <i className='fab fa-react icon'></i>
+        <div className='div-icon'></div>
+        <p className='icon-name'>React Js</p>
       </div>
-      <div className='card'>
-        <div className='flexing'></div>
-        <div className='discription'>
-          <div className='title'>THE TITLE2</div>
-          <div className='content'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            laboriosam eos soluta aspernatur, corrupti voluptatum modi suscipit
-            architecto mollitia, dolor dolore pariatur tempora neque, veritatis
-            itaque illum quod repellendus quasi.
-          </div>
-        </div>
+      <div className='item'>
+        <i className='fab fa-node-js icon'></i>
+        <div className='div-icon'></div>
+        <p className='icon-name'>Node Js</p>
       </div>
-      <div className='card'>
-        <div className='flexing'></div>
-        <div className='discription'>
-          <div className='title'>THE TITLE2</div>
-          <div className='content'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            laboriosam eos soluta aspernatur, corrupti voluptatum modi suscipit
-            architecto mollitia, dolor dolore pariatur tempora neque, veritatis
-            itaque illum quod repellendus quasi.
-          </div>
-        </div>
+      <div className='item'>
+        <i className='fab fa-html5 icon'></i>
+        <div className='div-icon'></div>
+        <p className='icon-name'>HTML</p>
       </div>
+      <div className='item'>
+        <i className='fab fa-css3-alt icon'></i>
+        <div className='div-icon'></div>
+        <p className='icon-name'>CSS</p>
+      </div>
+      <div className='item'>
+        <i className='fab fa-sass icon'></i>
+        <div className='div-icon'></div>
+        <p className='icon-name'>SCSS</p>
+      </div>
+      {/* <div className='item'>
+        <i className='fab fa-css3-alt icon'></i>
+        <div className='div-icon'></div>
+        <p className='icon-name'>CSS</p>
+      </div> */}
     </div>
   );
 };

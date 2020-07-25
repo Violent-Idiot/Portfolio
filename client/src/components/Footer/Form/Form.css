@@ -10,6 +10,8 @@ input[type="text"] {
   outline: none;
   background: transparent;
   border: none;
+  color: white;
+  font-size: 25px;
 }
 input[type="submit"] {
   color: white;
@@ -19,4 +21,9 @@ input[type="submit"] {
   outline: none;
   width: 30%;
   padding: 10px;
+  transition: all 100ms ease;
+}
+input[type="submit"]:hover {
+  border: 1px solid transparent;
+  background: #2980b9;
 }
