@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 // import name from "./test_img.png";
 import "./Projects.css";
 const Projects = () => {
+  // const [state, setstate] = useState("http://localhost:5000/");
+  const [body, setBody] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:5000/").then((res) => {
+      console.log(res.data);
+      setBody(res.data);
+      // console.log(body);
+    });
+  }, []);
+
   return (
     <div className='card1'>
       <div className='card'>

@@ -1,0 +1,31 @@
+.card3 {
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+}
+.paper-content {
+  border-radius: 20px;
+  border: white 1px solid;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.paper-img {
+  background: black;
+  height: 60%;
+  width: 60%;
+}
+.paper-title {
+  font-size: 50px;
+}
+.paper-date {
+  color: white;
+}
+.paper-divider {
+  height: 2px;
+  background: white;
+  width: 5%;
+}

@@ -28,11 +28,6 @@ const Projects = () => {
         <div className='div-icon'></div>
         <p className='icon-name'>SCSS</p>
       </div>
-      {/* <div className='item'>
-        <i className='fab fa-css3-alt icon'></i>
-        <div className='div-icon'></div>
-        <p className='icon-name'>CSS</p>
-      </div> */}
     </div>
   );
 };
