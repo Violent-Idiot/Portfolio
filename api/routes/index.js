@@ -1,6 +1,6 @@
 var express = require("express");
 
-var findProjects = require("../controller/db");
+var { findProjects, saveContact } = require("../controller/db");
 
 var router = express.Router();
 
@@ -12,6 +12,8 @@ router.get("/", async (req, res, next) => {
 
 router.post("/", (req, res, next) => {
   console.log(req.body);
+  const { email, msg } = req.body;
+  saveContact(email, msg);
   res.json({
     success: true,
   });

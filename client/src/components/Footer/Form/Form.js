@@ -5,9 +5,6 @@ const Form = () => {
   const [email, setemail] = useState("");
   const [msg, setmsg] = useState("");
 
-  // const change = (e) => {
-  //   setemail(e.target.value);
-  // };
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
@@ -26,12 +23,14 @@ const Form = () => {
         placeholder='Email'
         value={email}
         onChange={(e) => setemail(e.target.value)}
+        required
       />
       <input
         type='text'
         placeholder='Message'
         value={msg}
         onChange={(e) => setmsg(e.target.value)}
+        required
       />
       <input type='submit' />
     </form>
