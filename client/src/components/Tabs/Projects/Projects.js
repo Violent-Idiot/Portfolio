@@ -16,8 +16,11 @@ const Projects = () => {
   return (
     <div className='card1'>
       {body.map((item) => (
-        <Card key={item._id} title={item.title} body={item.body} />
+        <React.Fragment key={item._id}>
+          <Card title={item.title} body={item.body} />
+        </React.Fragment>
       ))}
+      {/* <div className='card-divider-hor'></div> */}
     </div>
   );
 };

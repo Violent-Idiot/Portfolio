@@ -22,6 +22,7 @@ const Form = () => {
         type='text'
         placeholder='Email'
         value={email}
+        pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
         onChange={(e) => setemail(e.target.value)}
         required
       />

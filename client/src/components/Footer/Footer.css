@@ -8,7 +8,8 @@
   justify-content: space-around;
   align-items: center;
 }
-h1 {
+h1,
+h2 {
   color: #ecf0f1;
 }
 .divider {
@@ -20,4 +21,7 @@ h1 {
 }
 .r-section {
   width: 50%;
+}
+.l-section {
+  width: 30%;
 }
