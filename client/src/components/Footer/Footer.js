@@ -12,15 +12,38 @@ const Footer = () => {
       </div>
       <div className='divider'></div>
       <div className='l-section'>
-        <h2>
-          Look I don't have any social media account <span role='img'>😢</span>.
+        <p>
+          Look I don't have any social media account
+          <span role='img' aria-label='emoji'>
+            😢
+          </span>
+          .
           <br />
           <br />
           Yeah I know that I am old School but I am better this way. <br />
           <br />
-          So only way of contacting me is through <span role='img'>👈</span>
+          So only way of contacting me is through
+          <span role='img' aria-label='emoji'>
+            👈
+          </span>
           form.
-        </h2>
+        </p>
+        <p>
+          Look I don't have any social media account
+          <span role='img' aria-label='emoji'>
+            😢
+          </span>
+          .
+          <br />
+          <br />
+          Yeah I know that I am old School but I am better this way. <br />
+          <br />
+          So only way of contacting me is through
+          <span role='img' aria-label='emoji'>
+            ☝
+          </span>
+          form.
+        </p>
       </div>
     </div>
   );

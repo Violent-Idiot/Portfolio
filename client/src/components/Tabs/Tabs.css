@@ -20,3 +20,9 @@ a {
   color: white;
   border-bottom: 3px solid black;
 }
+/* TODO fix TAB */
+@media only screen and (max-width: 768px) {
+  .tab-section {
+    display: none;
+  }
+}

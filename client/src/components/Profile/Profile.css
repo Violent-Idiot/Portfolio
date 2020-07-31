@@ -7,13 +7,45 @@
 }
 .profile {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 175px;
 }
 .about {
-  width: 40%;
   margin-top: 40px;
+}
+@media only screen and (min-width: 992px) {
+  .about {
+    width: 40%;
+    margin-top: 40px;
+  }
+
+  .profile {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 175px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    /* justify-content: space-around; */
+  }
+  .about > h1 {
+    text-align: center;
+  }
+  .about > p {
+    text-align: start;
+    /* width: 100%; */
+    /* margin-left: -50%; */
+  }
+  .about {
+    width: 80%;
+  }
 }
 .burger {
   margin-top: 15px;
