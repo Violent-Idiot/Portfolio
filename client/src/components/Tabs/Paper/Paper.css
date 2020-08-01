@@ -4,9 +4,8 @@
   width: 80%;
 }
 .paper-content {
-  border-radius: 20px;
+  border-radius: 5px;
   border: white 1px solid;
-  height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -15,11 +14,6 @@
 }
 .paper-img {
   background: black;
-  height: 60%;
-  width: 60%;
-}
-.paper-title {
-  font-size: 50px;
 }
 .paper-date {
   color: white;
@@ -28,4 +22,25 @@
   height: 2px;
   background: white;
   width: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .paper-img {
+    height: 25vh;
+    width: 75vw;
+  }
+  .paper-content {
+    height: 350px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1800px) {
+  .paper-img {
+    height: 60%;
+    width: 60%;
+  }
+  .paper-title {
+    font-size: 50px;
+  }
+  .paper-content {
+    height: 500px;
+  }
 }

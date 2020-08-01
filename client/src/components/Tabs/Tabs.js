@@ -11,12 +11,15 @@ const Tabs = () => {
     <Router>
       <div className='tab-section'>
         <Link to='/'>
+          <i className='fas fa-tasks'></i>
           <h1 className='tab'>Projects</h1>
         </Link>
         <Link to='/tech'>
+          <i className='fas fa-code'></i>
           <h1 className='tab'>Technology</h1>
         </Link>
         <Link to='/papers'>
+          <i className='fas fa-certificate'></i>
           <h1 className='tab'>Certificates</h1>
         </Link>
       </div>

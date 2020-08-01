@@ -1,15 +1,4 @@
-.card2 {
-  /* border-radius: 30px;
-  
-  background: #40407a; */
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
-  margin-top: 30px;
-  margin-left: 10%;
-  width: 80%;
-  height: 600px;
-}
+/* TODO ADD TITLE TO ALL TABS IN MOBILE VIEW */
 .div-icon {
   background-color: white;
   height: 1px;
@@ -26,12 +15,32 @@
   width: 200px;
 }
 .icon {
-  /* margin-top: 10px; */
-  /* margin-right: auto; */
   font-size: 110px;
   color: white;
 }
 .icon-name {
   text-align: center;
   color: white;
+}
+@media (min-width: 768px) and (max-width: 1800px) {
+  .card2 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 10%;
+    width: 80%;
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .item {
+    margin-top: 30px;
+  }
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
