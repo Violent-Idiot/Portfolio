@@ -3,6 +3,10 @@ import "./Tech.css";
 const Projects = () => {
   return (
     <div className='card2'>
+      <p className='mobile-title' style={{ fontSize: "50px" }}>
+        Technology
+      </p>
+
       <div className='item'>
         <i className='fab fa-react icon'></i>
         <div className='div-icon'></div>

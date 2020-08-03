@@ -4,6 +4,10 @@ import "./Paper.css";
 const Paper = () => {
   return (
     <div className='card3'>
+      <p className='mobile-title' style={{ fontSize: "55px" }}>
+        Certificates
+      </p>
+
       <div className='paper-content'>
         <div className='paper-img'></div>
         <div className='paper-divider'></div>

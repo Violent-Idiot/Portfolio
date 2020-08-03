@@ -15,6 +15,7 @@ const Projects = () => {
 
   return (
     <div className='card1'>
+      <p className='mobile-title'>Projects</p>
       {body.map((item) => (
         <React.Fragment key={item._id}>
           <Card title={item.title} body={item.body} />

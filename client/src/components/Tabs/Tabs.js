@@ -1,5 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 
 import Projects from "./Projects/Projects";
 import Tech from "./Tech/Tech";
@@ -7,23 +13,70 @@ import Paper from "./Paper/Paper";
 
 import "./Tabs.css";
 const Tabs = () => {
+  const [first, setfirst] = useState(true);
+  const [focus, setfocus] = useState(false);
+  const [yo, setyo] = useState(false);
+  // useEffect(() => {
+  //   setfirst(true);
+  //   setfocus(false);
+  //   setyo(false);
+  //   if (first) {
+  //     return <Redirect to='/' />;
+  //   }
+  // }, []);
+  // const home = () => {
+  //   return <Redirect to='/' />;
+  // };
+
+  // useEffect(() => {
+  //   setfirst(true);
+  //   // setfocus(false);
+  //   return home();
+  //   // setyo(false);
+  //   // if (first) {
+  //   // }
+  // }, []);
   return (
     <Router>
       <div className='tab-section'>
-        <Link to='/'>
+        <Link
+          to='/'
+          onClick={() => {
+            setfirst(true);
+            setfocus(false);
+            setyo(false);
+          }}
+        >
           <i className='fas fa-tasks'></i>
-          <h1 className='tab'>Projects</h1>
+          <h1 className={first ? "tab active" : "tab"}>Projects</h1>
         </Link>
-        <Link to='/tech'>
+        <Link
+          to='/tech'
+          onClick={() => {
+            setfirst(false);
+            setfocus(true);
+            setyo(false);
+          }}
+        >
           <i className='fas fa-code'></i>
-          <h1 className='tab'>Technology</h1>
+          {/* <h1 className='tab'>Technology</h1> */}
+          <h1 className={focus ? "tab active" : "tab"}>Technology</h1>
         </Link>
-        <Link to='/papers'>
+        <Link
+          to='/papers'
+          onClick={() => {
+            setfirst(false);
+            setfocus(false);
+            setyo(true);
+          }}
+        >
           <i className='fas fa-certificate'></i>
-          <h1 className='tab'>Certificates</h1>
+          <h1 className={yo ? "tab active" : "tab"}>Certificates</h1>
         </Link>
       </div>
       <Switch>
+        {/* TODO FIX THIS Redirect WHEN RELOADING */}
+        {/* {first && <Redirect exact to='/' />} */}
         <Route exact path='/'>
           <Projects />
         </Route>

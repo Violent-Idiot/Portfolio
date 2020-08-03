@@ -9,6 +9,7 @@ import "./App.css";
 
 function App() {
   return (
+    // TODO add scroll to profile
     <React.Fragment>
       <Home name='Résumé' />
       <Profile />

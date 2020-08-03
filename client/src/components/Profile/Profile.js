@@ -5,7 +5,8 @@ const Profile = () => {
   return (
     <React.Fragment>
       <div className='profile'>
-        <div className='picture'></div>
+        <img src='./assets/profile-img.jpeg' alt='' className='picture' />
+        {/* <div className='picture'></div> */}
         <div className='about'>
           <h1 style={heading}>YELO</h1>
           <p style={sizing}>
