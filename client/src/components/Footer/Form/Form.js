@@ -8,7 +8,7 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/", {
+      .post("/submit", {
         email,
         msg,
       })

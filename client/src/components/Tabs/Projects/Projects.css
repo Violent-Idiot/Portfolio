@@ -4,6 +4,7 @@
 }
 .card {
   margin-top: 30px;
+  background: #1b2531;
   /* flex-wrap: wrap; */
   display: flex;
   /* flex-direction: row;

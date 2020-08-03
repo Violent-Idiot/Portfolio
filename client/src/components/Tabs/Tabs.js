@@ -47,7 +47,7 @@ const Tabs = () => {
             setyo(false);
           }}
         >
-          <i className='fas fa-tasks'></i>
+          <i className={first ? "fas fa-tasks active" : "fas fa-tasks"}></i>
           <h1 className={first ? "tab active" : "tab"}>Projects</h1>
         </Link>
         <Link
@@ -58,7 +58,7 @@ const Tabs = () => {
             setyo(false);
           }}
         >
-          <i className='fas fa-code'></i>
+          <i className={focus ? "fas fa-code active" : "fas fa-code"}></i>
           {/* <h1 className='tab'>Technology</h1> */}
           <h1 className={focus ? "tab active" : "tab"}>Technology</h1>
         </Link>
@@ -70,7 +70,9 @@ const Tabs = () => {
             setyo(true);
           }}
         >
-          <i className='fas fa-certificate'></i>
+          <i
+            className={yo ? "fas fa-certificate active" : "fas fa-certificate"}
+          ></i>
           <h1 className={yo ? "tab active" : "tab"}>Certificates</h1>
         </Link>
       </div>

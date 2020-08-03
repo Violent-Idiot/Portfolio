@@ -5,12 +5,12 @@ var { findProjects, saveContact } = require("../controller/db");
 var router = express.Router();
 
 /* GET home page. */
-router.get("/", async (req, res, next) => {
+router.get("/project", async (req, res, next) => {
   let projects = await findProjects();
   res.json(projects);
 });
 
-router.post("/", (req, res, next) => {
+router.post("/submit", (req, res, next) => {
   console.log(req.body);
   const { email, msg } = req.body;
   saveContact(email, msg);

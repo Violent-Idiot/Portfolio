@@ -4,8 +4,9 @@
   width: 80%;
 }
 .paper-content {
+  background: #1b2531;
   border-radius: 5px;
-  border: white 1px solid;
+  /* border: white 1px solid; */
   width: 100%;
   display: flex;
   flex-direction: column;

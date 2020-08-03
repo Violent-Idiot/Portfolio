@@ -13,26 +13,29 @@ a {
   text-decoration: none;
 }
 .tab {
-  color: black;
+  /* color: black; */
   transition: all 200ms ease;
 }
 .tab:hover {
   color: white;
   border-bottom: 3px solid black;
 }
-.active {
+/* .active {
   color: white;
   border-bottom: 3px solid black;
-}
+} */
 
 @media only screen and (max-width: 768px) {
   /* .tab-section {
     display: none;
   } */
+  .active {
+    color: black;
+  }
   .fa-tasks,
   .fa-code,
   .fa-certificate {
-    color: white;
+    /* color: white; */
     font-size: 30px;
   }
   .tab-section {
@@ -56,6 +59,10 @@ a {
   }
 }
 @media (min-width: 768px) and (max-width: 1800px) {
+  .active {
+    color: white;
+    border-bottom: 3px solid black;
+  }
   .tab-section {
     display: block;
   }
