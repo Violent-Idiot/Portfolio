@@ -2,7 +2,7 @@ import React from "react";
 import "./Tech.css";
 const Projects = () => {
   return (
-    <div className='card2'>
+    <div data-aos='fade-up' className='card2'>
       <p className='mobile-title' style={{ fontSize: "50px" }}>
         Technology
       </p>

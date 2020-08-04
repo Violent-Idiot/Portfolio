@@ -3,7 +3,7 @@ import "./Paper.css";
 
 const Paper = () => {
   return (
-    <div className='card3'>
+    <div data-aos='fade' className='card3'>
       <p className='mobile-title' style={{ fontSize: "55px" }}>
         Certificates
       </p>
