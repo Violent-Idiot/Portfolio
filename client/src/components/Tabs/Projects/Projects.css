@@ -5,24 +5,16 @@
 .card {
   margin-top: 30px;
   background: #1b2531;
-  /* flex-wrap: wrap; */
   display: flex;
-  /* flex-direction: row;
-  justify-content: space-between;
-  align-items: center; */
 }
 .mobile-title {
-  /* width: 100%; */
   text-align: center;
   font-size: 70px;
-  /* font-weight: 1; */
 }
 @media only screen and (min-width: 992px) {
   .discription {
-    /* margin-top: 30px; */
     width: 45%;
   }
-
   .card {
     flex-direction: row;
     justify-content: space-between;
@@ -41,6 +33,13 @@
     height: 100px;
     width: 2px;
   }
+  .card:nth-child(2n) .content {
+    margin-left: 10px;
+  }
+  .card:nth-child(2n-1) .content {
+    margin-right: 10px;
+  }
+
   .flexing {
     width: 45%;
     height: 300px;
@@ -74,7 +73,9 @@
   }
   .content {
     width: 100%;
-    /* margin-left: -50%; */
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
   }
   .discription {
     /* margin-top: 30px; */
@@ -103,9 +104,3 @@
 .card-divider-ver {
   background: white;
 }
-/* .card-divider-hor {
-  margin-top: 30px;
-  height: 2px;
-  width: 80%;
-  background: white;
-} */
