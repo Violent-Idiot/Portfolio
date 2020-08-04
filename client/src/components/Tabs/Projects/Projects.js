@@ -8,7 +8,7 @@ const Projects = () => {
   const [body, setBody] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/project").then((res) => {
+    axios.get("/project").then((res) => {
       setBody(res.data);
     });
   }, []);
