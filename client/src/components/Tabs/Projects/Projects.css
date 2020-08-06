@@ -1,6 +1,8 @@
 .card1 {
   margin-left: 10%;
   width: 80%;
+  /* display: flex;
+  flex-direction: column; */
 }
 .card {
   margin-top: 30px;
@@ -11,6 +13,48 @@
   text-align: center;
   font-size: 70px;
 }
+.loader {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-self: center; */
+  /* align-self: center; */
+}
+.loader > img {
+  height: 50px;
+  width: 50px;
+}
+/* .card1 > img {
+  height: 50px;
+  width: 50px;
+  margin-top: 30px;
+  justify-self: center;
+  align-self: center;
+} */
+/* .flexing {
+  background: black;
+} */
+/* .discription {
+  width: 45%;
+} */
+.title {
+  /* text-align: start; */
+  color: white;
+  font-size: 40px;
+}
+/* .card:nth-child(2n) .title {
+  text-align: end;
+} */
+.content {
+  font-size: 25px;
+  margin-top: 40px;
+  color: white;
+}
+.card-divider-ver {
+  background: white;
+}
+
 @media only screen and (min-width: 992px) {
   .discription {
     width: 45%;
@@ -81,26 +125,4 @@
     /* margin-top: 30px; */
     width: 100%;
   }
-}
-.flexing {
-  background: black;
-}
-/* .discription {
-  width: 45%;
-} */
-.title {
-  /* text-align: start; */
-  color: white;
-  font-size: 40px;
-}
-/* .card:nth-child(2n) .title {
-  text-align: end;
-} */
-.content {
-  font-size: 25px;
-  margin-top: 40px;
-  color: white;
-}
-.card-divider-ver {
-  background: white;
 }

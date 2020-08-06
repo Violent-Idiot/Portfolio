@@ -2,6 +2,7 @@ require("../config/dbConfig");
 
 var project = require("../models/project");
 var contact = require("../models/contact");
+var paper = require("../models/paper");
 
 const findProjects = () => {
   try {
@@ -16,6 +17,20 @@ const findProjects = () => {
     console.log(error);
   }
 };
+const findPapers = () => {
+  try {
+    return paper.find({}, (err, res) => {
+      if (err) {
+        console.log(err);
+      } else {
+        return res;
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 const saveContact = (email, msg) => {
   try {
     let newContact = new contact({
@@ -27,4 +42,4 @@ const saveContact = (email, msg) => {
     console.log(error);
   }
 };
-module.exports = { findProjects, saveContact };
+module.exports = { findProjects, saveContact, findPapers };

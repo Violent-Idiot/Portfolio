@@ -1,12 +1,12 @@
 import React from "react";
 
-const Card = ({ title, body }) => {
+const Card = ({ title, body, pic }) => {
   return (
     <React.Fragment>
       <div className='card'>
-        <div className='flexing'>
-          {/* <img src={"./test_img.png"} alt='test_img' /> */}
-        </div>
+        {/* <div className='flexing'> */}
+        <img src={pic} alt='test_img' className='flexing' />
+        {/* </div> */}
         <div className='card-divider-ver'></div>
         <div className='discription'>
           <div className='title'>{title}</div>

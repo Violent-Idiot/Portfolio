@@ -1,7 +1,7 @@
 .picture {
   width: 350px;
   height: 350px;
-  background: black;
+  /* background: black; */
   border: 5px solid #1b2531;
   border-radius: 50%;
   object-fit: cover;

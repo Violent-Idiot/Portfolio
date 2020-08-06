@@ -1,6 +1,5 @@
 var mongoose = require("mongoose");
 var path = require("path");
-
 require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
 
 mongoose
@@ -11,8 +10,9 @@ mongoose
   .then(() => console.log("DB CONNECTED"))
   .catch((err) => console.log(err));
 
-// var newProject = new project({
+// var newProject = new paper({
+//   path: "uo",
 //   title: "yo",
-//   body: "iidhiewug",
+//   date: "iidhiewug",
 // });
 // newProject.save().catch((err) => console.log(err));

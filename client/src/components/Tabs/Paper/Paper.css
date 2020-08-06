@@ -5,6 +5,7 @@
 }
 .paper-content {
   background: #1b2531;
+  margin-top: 30px;
   border-radius: 5px;
   /* border: white 1px solid; */
   width: 100%;
@@ -13,9 +14,9 @@
   align-items: center;
   justify-content: space-around;
 }
-.paper-img {
-  background: black;
-}
+/* .paper-img {
+  object-fit: cover;
+} */
 .paper-date {
   color: white;
 }
@@ -25,6 +26,9 @@
   width: 5%;
 }
 @media only screen and (max-width: 768px) {
+  .paper-title {
+    margin-left: 10px;
+  }
   .paper-img {
     height: 25vh;
     width: 75vw;
@@ -35,13 +39,13 @@
 }
 @media (min-width: 768px) and (max-width: 1800px) {
   .paper-img {
-    height: 60%;
+    height: 60vh;
     width: 60%;
   }
   .paper-title {
     font-size: 50px;
   }
   .paper-content {
-    height: 500px;
+    height: 600px;
   }
 }

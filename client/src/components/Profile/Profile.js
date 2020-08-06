@@ -8,12 +8,10 @@ const Profile = () => {
         <img src='./assets/profile-img.jpeg' alt='' className='picture' />
         {/* <div className='picture'></div> */}
         <div className='about'>
-          <h1 style={heading}>YELO</h1>
+          <h1 style={heading}>Aryan</h1>
           <p style={sizing}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-            placeat praesentium accusantium repellendus voluptatibus. Quisquam
-            quis, voluptatum vero provident enim laborum velit quibusdam
-            inventore, aliquid quidem, impedit accusamus minima. Itaque.
+            Me live in Ahmedabad. This no final Content. Me do afterward. This
+            beta testing.
           </p>
         </div>
       </div>
