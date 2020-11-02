@@ -19,18 +19,6 @@ const Tabs = () => {
   useEffect(() => {
     localStorage.setItem("tab", "projects");
   }, []);
-  // const home = () => {
-  //   return <Redirect to='/' />;
-  // };
-
-  // useEffect(() => {
-  //   setfirst(true);
-  //   // setfocus(false);
-  //   return home();
-  //   // setyo(false);
-  //   // if (first) {
-  //   // }
-  // }, []);
   return (
     <Router>
       <div className='tab-section'>

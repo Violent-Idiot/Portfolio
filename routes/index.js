@@ -1,6 +1,12 @@
 var express = require("express");
 
-var { findProjects, saveContact, findPapers } = require("../controller/db");
+var {
+  findProjects,
+  saveContact,
+  findPapers,
+  findTech,
+  saveTech,
+} = require("../controller/db");
 
 var router = express.Router();
 
@@ -15,6 +21,20 @@ router.get("/paper", async (req, res, next) => {
   res.json(papers);
 });
 
+router.get("/tech", async (req, res, next) => {
+  let tech = await findTech();
+  // await saveTech();
+  // let tech = "done";
+  // console.log(tech);
+  res.json(tech);
+});
+router.post("/savetech", async (req, res, next) => {
+  let { path, title } = req.body;
+  console.log(req.body);
+  await saveTech(path, title);
+  let tech = "done";
+  res.json(tech);
+});
 router.post("/submit", (req, res, next) => {
   // console.log(req.body);
   const { email, msg } = req.body;

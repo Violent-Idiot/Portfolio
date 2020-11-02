@@ -3,6 +3,7 @@ require("../config/dbConfig");
 var project = require("../models/project");
 var contact = require("../models/contact");
 var paper = require("../models/paper");
+var tech = require("../models/tech");
 
 const findProjects = () => {
   try {
@@ -17,6 +18,17 @@ const findProjects = () => {
     console.log(error);
   }
 };
+
+const findTech = async () => {
+  return tech
+    .find({})
+    .then((res) => {
+      console.log(res);
+      return res;
+    })
+    .catch((err) => console.log(err));
+};
+
 const findPapers = () => {
   try {
     return paper.find({}, (err, res) => {
@@ -42,4 +54,16 @@ const saveContact = (email, msg) => {
     console.log(error);
   }
 };
-module.exports = { findProjects, saveContact, findPapers };
+const saveTech = (path, title) => {
+  try {
+    let newtech = new tech({
+      path,
+      title,
+    });
+    newtech.save().catch((err) => console.log(err));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+module.exports = { findProjects, saveContact, findPapers, findTech, saveTech };

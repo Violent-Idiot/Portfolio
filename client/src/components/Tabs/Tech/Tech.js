@@ -1,18 +1,30 @@
-import React from "react";
+import Axios from "axios";
+import React, { useEffect, useState } from "react";
 import "./Tech.css";
 const Projects = () => {
+  const [tech, setTech] = useState([]);
+  useEffect(() => {
+    Axios.get("/tech")
+      .then((res) => {
+        setTech(res.data);
+        // console.log(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <div data-aos='fade-up' className='card2'>
       <p className='mobile-title' style={{ fontSize: "50px" }}>
         Technology
       </p>
-
-      <div className='item'>
-        <i className='fab fa-react icon'></i>
-        <div className='div-icon'></div>
-        <p className='icon-name'>React Js</p>
-      </div>
-      <div className='item'>
+      {tech.map((item) => (
+        <div key={item._id} className='item'>
+          {/* <i className='fab fa-react icon'></i> */}
+          <img className='img' src={item.path} alt='tech_stack' />
+          <div className='div-icon'></div>
+          <p className='icon-name'>{item.title}</p>
+        </div>
+      ))}
+      {/* <div className='item'>
         <i className='fab fa-node-js icon'></i>
         <div className='div-icon'></div>
         <p className='icon-name'>Node Js</p>
@@ -33,7 +45,7 @@ const Projects = () => {
         <p className='icon-name'>SCSS</p>
       </div>
       <div className='item'>
-        {/* <i className='fab fa-sass icon'></i> */}
+        <i className='fab fa-sass icon'></i>
         <img
           className='img'
           src='https://res.cloudinary.com/mercesletifer/image/upload/v1604301588/c-plus-plus-programming-language_fstu1g.svg'
@@ -41,7 +53,7 @@ const Projects = () => {
         />
         <div className='div-icon'></div>
         <p className='icon-name'>C++</p>
-      </div>
+      </div> */}
     </div>
   );
 };
