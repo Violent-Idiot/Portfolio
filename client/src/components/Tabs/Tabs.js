@@ -16,14 +16,9 @@ const Tabs = () => {
   const [first, setfirst] = useState(true);
   const [focus, setfocus] = useState(false);
   const [yo, setyo] = useState(false);
-  // useEffect(() => {
-  //   setfirst(true);
-  //   setfocus(false);
-  //   setyo(false);
-  //   if (first) {
-  //     return <Redirect to='/' />;
-  //   }
-  // }, []);
+  useEffect(() => {
+    localStorage.setItem("tab", "projects");
+  }, []);
   // const home = () => {
   //   return <Redirect to='/' />;
   // };
@@ -45,10 +40,23 @@ const Tabs = () => {
             setfirst(true);
             setfocus(false);
             setyo(false);
+            localStorage.setItem("tab", "projects");
           }}
         >
-          <i className={first ? "fas fa-tasks active" : "fas fa-tasks"}></i>
-          <h1 className={first ? "tab active" : "tab"}>Projects</h1>
+          <i
+            className={
+              localStorage.getItem("tab") === "projects"
+                ? "fas fa-tasks active"
+                : "fas fa-tasks"
+            }
+          ></i>
+          <h1
+            className={
+              localStorage.getItem("tab") === "projects" ? "tab active" : "tab"
+            }
+          >
+            Projects
+          </h1>
         </Link>
         <Link
           to='/tech'
@@ -56,11 +64,24 @@ const Tabs = () => {
             setfirst(false);
             setfocus(true);
             setyo(false);
+            localStorage.setItem("tab", "tech");
           }}
         >
-          <i className={focus ? "fas fa-code active" : "fas fa-code"}></i>
+          <i
+            className={
+              localStorage.getItem("tab") === "tech"
+                ? "fas fa-code active"
+                : "fas fa-code"
+            }
+          ></i>
           {/* <h1 className='tab'>Technology</h1> */}
-          <h1 className={focus ? "tab active" : "tab"}>Technology</h1>
+          <h1
+            className={
+              localStorage.getItem("tab") === "tech" ? "tab active" : "tab"
+            }
+          >
+            Technology
+          </h1>
         </Link>
         <Link
           to='/papers'
@@ -68,12 +89,23 @@ const Tabs = () => {
             setfirst(false);
             setfocus(false);
             setyo(true);
+            localStorage.setItem("tab", "cert");
           }}
         >
           <i
-            className={yo ? "fas fa-certificate active" : "fas fa-certificate"}
+            className={
+              localStorage.getItem("tab") === "cert"
+                ? "fas fa-certificate active"
+                : "fas fa-certificate"
+            }
           ></i>
-          <h1 className={yo ? "tab active" : "tab"}>Certificates</h1>
+          <h1
+            className={
+              localStorage.getItem("tab") === "cert" ? "tab active" : "tab"
+            }
+          >
+            Certificates
+          </h1>
         </Link>
       </div>
       <Switch>

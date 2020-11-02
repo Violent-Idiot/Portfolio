@@ -17,6 +17,11 @@
   font-size: 110px;
   color: white;
 }
+.img {
+  color: white;
+  height: 110px;
+  width: 110px;
+}
 .icon-name {
   text-align: center;
   color: white;

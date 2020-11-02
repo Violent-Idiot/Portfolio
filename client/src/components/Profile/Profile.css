@@ -58,6 +58,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  /* margin-bottom: 50px; */
 }
 .fa-chevron-down {
   font-size: 30px;

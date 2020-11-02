@@ -5,7 +5,11 @@ const Profile = () => {
   return (
     <React.Fragment>
       <div className='profile'>
-        <img src='./assets/profile-img.jpeg' alt='' className='picture' />
+        <img
+          src='https://res.cloudinary.com/mercesletifer/image/upload/v1604303400/portfolio/profile-img_eiqgne.jpg'
+          alt=''
+          className='picture'
+        />
         {/* <div className='picture'></div> */}
         <div className='about'>
           <h1 style={heading}>Aryan</h1>

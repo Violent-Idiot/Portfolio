@@ -32,6 +32,16 @@ const Projects = () => {
         <div className='div-icon'></div>
         <p className='icon-name'>SCSS</p>
       </div>
+      <div className='item'>
+        {/* <i className='fab fa-sass icon'></i> */}
+        <img
+          className='img'
+          src='https://res.cloudinary.com/mercesletifer/image/upload/v1604301588/c-plus-plus-programming-language_fstu1g.svg'
+          alt=''
+        />
+        <div className='div-icon'></div>
+        <p className='icon-name'>C++</p>
+      </div>
     </div>
   );
 };
