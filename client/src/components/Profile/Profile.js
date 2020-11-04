@@ -12,10 +12,11 @@ const Profile = () => {
         />
         {/* <div className='picture'></div> */}
         <div className='about'>
-          <h1 style={heading}>Aryan</h1>
+          <h1 style={heading}>Aryan N</h1>
           <p style={sizing}>
-            Me live in Ahmedabad. This no final Content. Me do afterward. This
-            beta testing.
+            I come from a small business town of Gujarat "AHMEDABAD" where it is
+            believed that there is an entrepreneur hidden in each person, but am
+            actually from GOD's own country "KERALA".
           </p>
         </div>
       </div>

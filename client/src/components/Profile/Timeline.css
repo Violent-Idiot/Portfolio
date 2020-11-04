@@ -3,7 +3,10 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
+strong {
+  border-bottom: 2px;
+  border-color: white;
+}
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: "";
