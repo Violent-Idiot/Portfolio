@@ -23,7 +23,7 @@ const findTech = async () => {
   return tech
     .find({})
     .then((res) => {
-      console.log(res);
+      // console.log(res);
       return res;
     })
     .catch((err) => console.log(err));

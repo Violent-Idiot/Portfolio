@@ -1,6 +1,6 @@
 import React from "react";
 import "./Profile.css";
-
+import Timeline from "./Timeline";
 const Profile = () => {
   return (
     <React.Fragment>
@@ -26,7 +26,15 @@ const Profile = () => {
           <i className='fas fa-chevron-down'></i>
           <i className='fas fa-chevron-down'></i>
         </div>
+        {/* <div className='timeline'>
+          <div className='timeline-img'></div>
+          <p>fjnnrfiuu</p>
+        </div> */}
       </div>
+      <Timeline />
+      <p style={{ textAlign: "center", fontSize: "30px" }}>
+        Let's see what <br /> happens next
+      </p>
     </React.Fragment>
   );
 };

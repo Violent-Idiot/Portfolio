@@ -10,7 +10,7 @@ const Projects = () => {
   const [body, setBody] = useState([]);
   const [load, setload] = useState(null);
   useEffect(() => {
-    setload("true");
+    setload(true);
     axios.get("/project").then((res) => {
       setBody(res.data);
       setload(false);
@@ -19,13 +19,13 @@ const Projects = () => {
 
   return (
     <div data-aos='fade-up' className='card1'>
+      <p className='mobile-title'>Projects</p>
       {load && (
         <div className='loader'>
           <img src={gif} alt='loader' />
           <p>Fetching Data</p>
         </div>
       )}
-      <p className='mobile-title'>Projects</p>
       {body.map((item) => (
         <React.Fragment key={item._id}>
           <Card title={item.title} pic={item.path} body={item.body} />
